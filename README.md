@@ -12,6 +12,25 @@ Projet personnel de QA : automatisation de tests end-to-end sur le site officiel
 ## 🛠️ Stack
 Playwright · TypeScript · GitHub Actions (CI)
 
+## 🏗️ Architecture (Page Object Model)
+
+Le projet suit le pattern **Page Object Model (POM)** : les locators et les
+actions de chaque page sont regroupés dans une classe dédiée, séparée des tests.
+
+\`\`\`
+asmfc-playwright/
+├─ pages/          # Page Objects (locators + actions)
+│  └─ HomePage.ts  # page d'accueil : menu, navigation
+├─ tests/          # les tests (scénarios)
+│  └─ home.spec.ts
+└─ playwright.config.ts
+\`\`\`
+
+**Pourquoi ce pattern ?**
+- 🔧 Maintenabilité : si le site change, on corrige le locator à **un seul endroit** (la classe), pas dans chaque test.
+- 📖 Lisibilité : les tests décrivent l'intention (`home.menuLink('ACTUALITÉS')`) plutôt que la mécanique.
+- ♻️ Réutilisabilité : une méthode paramétrée (`menuLink(name)`) cible n'importe quel item du menu.
+
 ## ▶️ Lancer les tests
 \`\`\`bash
 npm install
