@@ -8,12 +8,21 @@ test.beforeEach(async ({ page }) => {
   await home.goto();
 });
 
-// Titre de l'onglet
+test.describe('Page d\'acceuil : Contenu', () => {
+
+  // Titre de l'onglet
 test('Titre de l\'onglet',async({ page }) => {
 await expect(page).toHaveTitle(/AS Monaco/);  
 });
 
-//Visibilité de chaque item sur la navigation
+test('Le carousel est affiché', async() => {
+await expect (home.carousel).toBeVisible();
+});
+
+});
+
+test.describe('Page d\'acceuil : Navigations et liens', () => {
+
 test('Visibilité  de l\'item  Billeterie', async ({ page }) => {
 await expect (home.menuLink('BILLETERIE')).toBeVisible;
 });
@@ -60,6 +69,4 @@ test('Le lien Hospitalité pointe vers l\'experience VIP', async() => {
 await expect(home.hospitaliteLink()).toHaveAttribute('href', /business/);
 });
 
-test('Le carousel est affiché', async() => {
-await expect (home.carousel).toBeVisible();
-})
+});

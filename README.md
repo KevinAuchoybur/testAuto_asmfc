@@ -5,13 +5,20 @@
 Projet personnel de QA : automatisation de tests end-to-end sur le site officiel de l'AS Monaco avec **Playwright + TypeScript**.
 
 ## 🎯 Ce que couvrent les tests
-- Chargement de la page et titre
-- Présence du menu principal (Actualités)
-- Navigation vers la page Actualités (`/news`)
-- Lien Boutique pointant vers la boutique en ligne (shop.asmonaco.com)
-- Lien Billeterie pointant vers la billeterie en ligne (billetterie.asmonaco.com/fr/)
-- Lien Hospitalité pointant vers l'expérience VIP'(business.asmonaco.com/)
-- Affichage du carrousel de la page d'accueil
+
+Tests end-to-end sur la page d'accueil, organisés en suites (`test.describe`) :
+
+**Page d'accueil : Contenu**
+- Titre de l'onglet
+- Affichage du carrousel
+
+**Page d'accueil : Navigation & liens**
+- Visibilité des items du menu : Actualités, Effectif, Calendrier & résultats,
+  Classement, Vidéos, Billetterie, Boutique, Hospitalités
+- Liens externes vers la bonne destination : Billetterie, Boutique (shop.asmonaco.com),
+  Hospitalités (expérience VIP)
+
+> 13 tests exécutés sur Chromium, Firefox et WebKit (39 exécutions).
 
 ## 🛠️ Stack
 Playwright · TypeScript · GitHub Actions (CI)
