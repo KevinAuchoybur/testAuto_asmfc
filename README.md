@@ -5,9 +5,13 @@
 Projet personnel de QA : automatisation de tests end-to-end sur le site officiel de l'AS Monaco avec **Playwright + TypeScript**.
 
 ## 🎯 Ce que couvrent les tests
-- Chargement de la page d'accueil et titre
-- Présence du menu principal
-- Navigation vers la page Actualités
+- Chargement de la page et titre
+- Présence du menu principal (Actualités)
+- Navigation vers la page Actualités (`/news`)
+- Lien Boutique pointant vers la boutique en ligne (shop.asmonaco.com)
+- Lien Billeterie pointant vers la billeterie en ligne (billetterie.asmonaco.com/fr/)
+- Lien Hospitalité pointant vers l'expérience VIP'(business.asmonaco.com/)
+- Affichage du carrousel de la page d'accueil
 
 ## 🛠️ Stack
 Playwright · TypeScript · GitHub Actions (CI)
@@ -45,4 +49,4 @@ npx playwright codegen https://www.asmonaco.com/fr/
 \`\`\`
 
 ## ⚠️ Automatisation responsable
-Projet à but pédagogique. Les tests ciblent le comportement public du site, en volume raisonnable, sans contournement de protections.
+Projet à but pédagogique. Les tests ciblent le comportement public du site, en volume raisonnable, sans contournement de protections.git add.
