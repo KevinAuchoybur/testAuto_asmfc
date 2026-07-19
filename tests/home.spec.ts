@@ -23,37 +23,20 @@ await expect (home.carousel).toBeVisible();
 
 test.describe('Page d\'acceuil : Navigations et liens', () => {
 
-test('Visibilité  de l\'item  Billeterie', async ({ page }) => {
-await expect (home.menuLink('BILLETERIE')).toBeVisible;
-});
+const GALAXYBAR_ITEMS = ['BILLETTERIE', 'BOUTIQUE', 'HOSPITALITÉS'];
+for (const item of GALAXYBAR_ITEMS) {
+  test(`Visibilité de l'item ${item}`, async () => {
+    await expect(home.galaxyBarLink(item)).toBeVisible();
+  });
+}
 
-test('Visibilité  de l\'item  Boutique', async ({ page }) => {
-await expect (home.menuLink('BOUTIQUE')).toBeVisible;
-}); 
+const NAVBAR_ITEMS = ['ACTUALITÉS', 'EFFECTIF', 'CALENDRIER & RÉSULTATS','CLASSEMENT', 'VIDÉOS'];
+for (const item of NAVBAR_ITEMS) {
+test(`Visibilité de l'item ${item}`, async () => {
+    await expect(home.menuLink(item)).toBeVisible();
+  });
+}
 
-test('Visibilité  de l\'item  Hospitalités', async ({ page }) => {
-await expect (home.menuLink('HOSPITALITÉS')).toBeVisible;
-});
-
-test('Visibilité  de l\'item  Actualités', async ({ page }) => {
-await expect (home.menuLink('ACTUALITÉS')).toBeVisible;
-});
-
-test('Visibilité  de l\'item  Effectif', async ({ page }) => {
-await expect (home.menuLink('EFFECTIF')).toBeVisible;
-});
-
-test('Visibilité  de l\'item  Calendrier & résultats', async ({ page }) => {
-await expect (home.menuLink('CALENDRIER & RÉSULTATS')).toBeVisible;
-});
-
-test('Visibilité  de l\'item  Classement', async ({ page }) => {
-await expect (home.menuLink('CLASSEMENT')).toBeVisible;
-});
-
-test('Visibilité  de l\'item  Vidéos', async ({ page }) => {
-await expect (home.menuLink('VIDÉOS')).toBeVisible;
-});
 
 // Clic sur chaque items ET bonne redirection sur la page cible
 

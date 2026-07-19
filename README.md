@@ -13,8 +13,10 @@ Tests end-to-end sur la page d'accueil, organisés en suites (`test.describe`) :
 - Affichage du carrousel
 
 **Page d'accueil : Navigation & liens**
-- Visibilité des items du menu : Actualités, Effectif, Calendrier & résultats,
-  Classement, Vidéos, Billetterie, Boutique, Hospitalités
+- Visibilité des items du menu, générée **data-driven** via des boucles `for...of` sur
+  deux groupes (locators différents) : menu principal (Actualités, Effectif,
+  Calendrier & résultats, Classement, Vidéos) et GalaxyBar (Billetterie, Boutique,
+  Hospitalités)
 - Liens externes vers la bonne destination : Billetterie, Boutique (shop.asmonaco.com),
   Hospitalités (expérience VIP)
 
@@ -40,7 +42,7 @@ asmfc-playwright/
 **Pourquoi ce pattern ?**
 - 🔧 Maintenabilité : si le site change, on corrige le locator à **un seul endroit** (la classe), pas dans chaque test.
 - 📖 Lisibilité : les tests décrivent l'intention (`home.menuLink('ACTUALITÉS')`) plutôt que la mécanique.
-- ♻️ Réutilisabilité : une méthode paramétrée (`menuLink(name)`) cible n'importe quel item du menu.
+- ♻️ Réutilisabilité : des méthodes paramétrées (`menuLink(name)`, `galaxyBarLink(name)`) ciblent n'importe quel item, ce qui permet de générer les tests de visibilité **dynamiquement** via des boucles `for...of` plutôt que de dupliquer un test par item.
 
 ## ▶️ Lancer les tests
 \`\`\`bash
@@ -56,4 +58,4 @@ npx playwright codegen https://www.asmonaco.com/fr/
 \`\`\`
 
 ## ⚠️ Automatisation responsable
-Projet à but pédagogique. Les tests ciblent le comportement public du site, en volume raisonnable, sans contournement de protections.git add.
+Projet à but pédagogique. Les tests ciblent le comportement public du site, en volume raisonnable, sans contournement de protections.
