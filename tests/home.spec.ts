@@ -19,6 +19,26 @@ test('Le carousel est affiché', async() => {
 await expect (home.carousel).toBeVisible();
 });
 
+test('Le bandeau du prochain match est affiché', async() => {
+await expect (home.nextMatch).toBeVisible();
+});
+
+test('Le composant des stories est affiché', async() => {
+await expect (home.componentStories).toBeVisible();
+});
+
+test('Le bloc Actualités est affiché', async() => {
+await expect (home.blocNews()).toBeVisible();
+});
+
+test('Le bouton Voir toutes les actualités est affiché ', async() => {
+await expect (home.buttonSeeNews()).toBeVisible();
+});
+
+test('Le bouton Voir toutes les actualités pointe sur les actualités ', async() => {
+await expect(home.newsLink()).toHaveAttribute('href', /news/);
+});
+
 });
 
 test.describe('Page d\'acceuil : Navigations et liens', () => {
