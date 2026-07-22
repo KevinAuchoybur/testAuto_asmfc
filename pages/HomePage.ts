@@ -7,6 +7,8 @@ export class Homepage {
   readonly carousel : Locator;
   readonly nextMatch : Locator;
   readonly componentStories : Locator;
+  readonly ranking : Locator;
+  readonly imgStadium : Locator;
 
 constructor(page : Page){
   this.page = page;
@@ -15,6 +17,8 @@ constructor(page : Page){
   this.carousel = page.locator ('[data-component="InfoSlider"]');
   this.nextMatch = page.locator ('[data-component="MatchPresentationBanner"]');
   this.componentStories = page.locator ('.join-widget-list');
+  this.ranking = page.locator('[data-component="TeamRankStats"]');
+  this.imgStadium = page.locator('.bannerImage');
 
 }
 
@@ -53,9 +57,55 @@ buttonSeeNews(): Locator {
 
 newsLink(): Locator {
 return this.page.getByRole('link', { name: 'Voir toutes les actualités', exact: true });
+}
+
+blocAcademy(): Locator {
+return this.page.getByRole('heading', {name: '50 ans de l\'Academy'});
+}
+
+academyLink(): Locator {
+return this.page.getByRole('link', {name : 'Voir le dossier spécial'});
+}
+
+blocLastMatch(): Locator {
+  return this.page.getByRole('heading', {name: 'Dernier match'});
+}
+
+afterMatch(): Locator {
+  return this.page.getByRole('link', {name : 'Après-match'})
+}
+
+blocNextMatch(): Locator {
+  return this.page.getByRole('heading', {name: 'Match à venir'});
+}
+
+blocPlayers(): Locator {
+  return this.page.getByRole('heading', {name: 'Nos joueurs'});
+}
+
+playersLink(): Locator {
+return this.page.getByRole('link', {name : 'Voir tous les joueurs '});
+}
+
+blocCentenarian(): Locator {
+return this.page.getByRole('heading', {name: '100 ans de passion'});
+}
+
+centenarianLink(): Locator {
+return this.page.getByRole('link', {name : 'Découvrir l\'histoire'});
+}
+
+blocHonours(): Locator {
+return this.page.getByRole('heading', {name: 'Le Palmarès'});
+}
+
+honoursLink(): Locator {
+return this.page.getByRole('link', {name : 'Voir le palmarès'});
+}
 
 }
-}
+
+
 
 
 

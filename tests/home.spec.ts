@@ -39,6 +39,58 @@ test('Le bouton Voir toutes les actualités pointe sur les actualités ', async(
 await expect(home.newsLink()).toHaveAttribute('href', /news/);
 });
 
+test('Le bloc Academy est affiché', async() => {
+await expect (home.blocAcademy()).toBeVisible();
+});
+
+test('Le bouton Dossier spécial pointe sur l\'Academy', async() => {
+await expect (home.academyLink()).toHaveAttribute('href', /academy/);
+});
+
+test('Le bloc Dernier match est bien affiché', async() => {
+await expect (home.blocLastMatch()).toBeVisible();
+});
+
+test('Le bouton Après match pointe sur le résumé du dernier match', async() => {
+await expect (home.afterMatch()).toHaveAttribute('href', /calendrier/);
+});
+
+test('Le bloc Prochain match est bien affiché', async() => {
+await expect (home.blocNextMatch()).toBeVisible();
+});
+
+test('Le bloc Classement est bien affiché', async() => {
+await expect (home.ranking).toBeVisible();
+});
+
+test('Le bloc des joueurs est bien affiché', async() => {
+await expect (home.blocPlayers()).toBeVisible();
+});
+
+test('Le bouton Voir tous les joueurs pointe sur les joueurs', async() => {
+await expect (home.playersLink()).toHaveAttribute('href', /joueurs/);
+});
+
+test('Le bloc Centenaire est affiché', async() => {
+await expect (home.blocCentenarian()).toBeVisible();
+});
+
+test('Le bouton Découvrir l\'histoire pointe sur l\'histoire du club', async() => {
+await expect (home.centenarianLink()).toHaveAttribute('href', /histoire/);
+});
+
+test('Le bloc Palmarès est affiché', async() => {
+await expect (home.blocHonours()).toBeVisible();
+});
+
+test('Le bouton Voir la palmarès pointe sur le palmarès du club', async() => {
+await expect (home.honoursLink()).toHaveAttribute('href', /palmares/);
+});
+
+test('L\'image du stade est affiché', async() => {
+await expect (home.imgStadium).toBeVisible();
+});
+
 });
 
 test.describe('Page d\'acceuil : Navigations et liens', () => {

@@ -11,6 +11,18 @@ Tests end-to-end sur la page d'accueil, organisés en suites (`test.describe`) :
 **Page d'accueil : Contenu**
 - Titre de l'onglet
 - Affichage du carrousel
+- Affichage du bandeau prochain match
+- Affichage du composant stories
+- Affichage du bloc Actualités (titre + bouton "Voir toutes les actualités" + lien vers les actualités)
+- Affichage du bloc Academy (titre + bouton "Voir le dossier spécial" + lien vers l'Academy)
+- Affichage du bloc Dernier match (titre + bouton "Après-match" + lien vers le calendrier)
+- Affichage du bloc Prochain match (titre "Match à venir")
+- Affichage du bloc Classement
+- Affichage du bloc des joueurs (titre + bouton "Voir tous les joueurs" + lien vers les joueurs)
+- Affichage du bloc Centenaire (titre + bouton "Découvrir l'histoire" + lien vers l'histoire du club)
+- Affichage du bloc Palmarès (titre + bouton "Voir le palmarès" + lien vers le palmarès)
+- Affichage de l'image du stade
+
 
 **Page d'accueil : Navigation & liens**
 - Visibilité des items du menu, générée **data-driven** via des boucles `for...of` sur
@@ -20,7 +32,7 @@ Tests end-to-end sur la page d'accueil, organisés en suites (`test.describe`) :
 - Liens externes vers la bonne destination : Billetterie, Boutique (shop.asmonaco.com),
   Hospitalités (expérience VIP)
 
-> 13 tests exécutés sur Chromium, Firefox et WebKit (39 exécutions).
+> 31 tests exécutés sur Chromium, Firefox et WebKit (93 exécutions).
 
 ## 🛠️ Stack
 Playwright · TypeScript · GitHub Actions (CI)
