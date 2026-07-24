@@ -9,6 +9,7 @@ export class Homepage {
   readonly componentStories : Locator;
   readonly ranking : Locator;
   readonly imgStadium : Locator;
+  readonly footer : Locator;
 
 constructor(page : Page){
   this.page = page;
@@ -19,6 +20,7 @@ constructor(page : Page){
   this.componentStories = page.locator ('.join-widget-list');
   this.ranking = page.locator('[data-component="TeamRankStats"]');
   this.imgStadium = page.locator('.bannerImage');
+  this.footer = page.locator('[data-component="Footer"]');
 
 }
 
@@ -101,6 +103,18 @@ return this.page.getByRole('heading', {name: 'Le Palmarès'});
 
 honoursLink(): Locator {
 return this.page.getByRole('link', {name : 'Voir le palmarès'});
+}
+
+officialKits(): Locator {
+return this.page.getByRole('heading', {name: 'Tenues officielles'});
+}
+
+homeKit(): Locator {
+return this.page.getByRole('link', {name : 'Maillot domicile'});
+}
+
+awayKit(): Locator {
+return this.page.getByRole('link', {name : 'Maillot extérieur'});
 }
 
 }

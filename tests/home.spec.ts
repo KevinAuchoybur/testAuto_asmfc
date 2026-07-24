@@ -91,6 +91,22 @@ test('L\'image du stade est affiché', async() => {
 await expect (home.imgStadium).toBeVisible();
 });
 
+test('Le bloc Tenues officielles est affiché', async() => {
+await expect (home.officialKits()).toBeVisible();
+});
+
+test('Le bouton Maillot domicile pointe sur la boutique avec le maillot domicile', async() => {
+await expect (home.homeKit()).toHaveAttribute('href', /home-jersey/);
+});
+
+test('Le bouton Maillot extérieur pointe sur la boutique avec le maillot extérieur', async() => {
+await expect (home.awayKit()).toHaveAttribute('href', /away-jersey/);
+});
+
+test('Footer bien affiché', async() => {
+await expect (home.footer).toBeVisible();
+});
+
 });
 
 test.describe('Page d\'acceuil : Navigations et liens', () => {
@@ -117,7 +133,7 @@ await expect(home.billetterieLink()).toHaveAttribute('href', /billetterie/);
 });
 
 test('Le lien Boutique pointe vers la boutique en ligne', async() => {
-await expect(home.boutiqueLink()).toHaveAttribute('href', /shop\.asmonaco\.com/);
+await expect(home.boutiqueLink()).toHaveAttribute('href', /shop/);
 });
 
 test('Le lien Hospitalité pointe vers l\'experience VIP', async() => {

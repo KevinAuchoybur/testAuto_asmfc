@@ -22,6 +22,8 @@ Tests end-to-end sur la page d'accueil, organisés en suites (`test.describe`) :
 - Affichage du bloc Centenaire (titre + bouton "Découvrir l'histoire" + lien vers l'histoire du club)
 - Affichage du bloc Palmarès (titre + bouton "Voir le palmarès" + lien vers le palmarès)
 - Affichage de l'image du stade
+- Affichage du bloc Tenues officielles (+ liens boutique maillot domicile/extérieur)
+- Affichage du footer
 
 
 **Page d'accueil : Navigation & liens**
@@ -32,7 +34,7 @@ Tests end-to-end sur la page d'accueil, organisés en suites (`test.describe`) :
 - Liens externes vers la bonne destination : Billetterie, Boutique (shop.asmonaco.com),
   Hospitalités (expérience VIP)
 
-> 31 tests exécutés sur Chromium, Firefox et WebKit (93 exécutions).
+> 35 tests exécutés sur Chromium, Firefox et WebKit (105 exécutions).
 
 ## 🛠️ Stack
 Playwright · TypeScript · GitHub Actions (CI)
