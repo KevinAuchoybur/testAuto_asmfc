@@ -12,7 +12,7 @@ test.describe('Page d\'acceuil : Contenu', () => {
 
   // Titre de l'onglet
 
-test('Titre de l\'onglet', {tag :'@smoke'} ,async({ page },) => {
+test('Titre de l\'onglet', {tag :'@smoke'} ,async({ page }) => {
 await expect(page).toHaveTitle(/AS Monaco/);  
 });
 
