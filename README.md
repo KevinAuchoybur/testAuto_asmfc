@@ -61,9 +61,10 @@ asmfc-playwright/
 ## ▶️ Lancer les tests
 \`\`\`bash
 npm install
-npx playwright test          # tous les tests
-npx playwright test --ui     # mode interactif
-npx playwright show-report   # rapport HTML
+npx playwright test              # tous les tests
+npx playwright test --ui         # mode interactif
+npx playwright test -g '@smoke'  # tests smoke uniquement (rapides, critiques)
+npx playwright show-report       # rapport HTML
 \`\`\`
 
 ## 🛠️ Écrire de nouveaux tests

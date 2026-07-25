@@ -11,7 +11,8 @@ test.beforeEach(async ({ page }) => {
 test.describe('Page d\'acceuil : Contenu', () => {
 
   // Titre de l'onglet
-test('Titre de l\'onglet',async({ page }) => {
+
+test('Titre de l\'onglet', {tag :'@smoke'} ,async({ page },) => {
 await expect(page).toHaveTitle(/AS Monaco/);  
 });
 
@@ -113,7 +114,8 @@ test.describe('Page d\'acceuil : Navigations et liens', () => {
 
 const GALAXYBAR_ITEMS = ['BILLETTERIE', 'BOUTIQUE', 'HOSPITALITÉS'];
 for (const item of GALAXYBAR_ITEMS) {
-  test(`Visibilité de l'item ${item}`, async () => {
+const options = item === 'BILLETTERIE' ? { tag: '@smoke' } : {};
+  test(`Visibilité de l'item ${item}`,options, async () => {
     await expect(home.galaxyBarLink(item)).toBeVisible();
   });
 }
