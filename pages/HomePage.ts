@@ -51,7 +51,7 @@ return this.page.getByRole('link', { name: 'HOSPITALITÉS', exact: true });
 
 blocNews(): Locator {
   return this.page.getByRole('heading', {name : 'ACTUALITÉS'})
-}
+} 
 
 buttonSeeNews(): Locator {
   return this.page.getByRole('link', {name: 'Voir toutes les actualités'} )
@@ -61,12 +61,12 @@ newsLink(): Locator {
 return this.page.getByRole('link', { name: 'Voir toutes les actualités', exact: true });
 }
 
-blocAcademy(): Locator {
-return this.page.getByRole('heading', {name: '50 ans de l\'Academy'});
+blocConferenceLeague(): Locator {
+return this.page.getByRole('heading', {name: 'Ligue Conférence'});
 }
 
-academyLink(): Locator {
-return this.page.getByRole('link', {name : 'Voir le dossier spécial'});
+conferenceLeagueLink(): Locator {
+return this.page.getByRole('link', {name : 'Voir tous les articles'});
 }
 
 blocLastMatch(): Locator {
@@ -117,9 +117,8 @@ awayKit(): Locator {
 return this.page.getByRole('link', {name : 'Maillot extérieur'});
 }
 
+thirdKit(): Locator {
+return this.page.getByRole('link', {name : 'Maillot Third'});
 }
 
-
-
-
-
+}

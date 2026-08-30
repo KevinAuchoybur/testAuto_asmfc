@@ -14,7 +14,7 @@ Tests end-to-end sur la page d'accueil, organisés en suites (`test.describe`) :
 - Affichage du bandeau prochain match
 - Affichage du composant stories
 - Affichage du bloc Actualités (titre + bouton "Voir toutes les actualités" + lien vers les actualités)
-- Affichage du bloc Academy (titre + bouton "Voir le dossier spécial" + lien vers l'Academy)
+- Affichage du bloc Ligue Conférence (titre + bouton "Voir tous les articles" + lien vers les actualités)
 - Affichage du bloc Dernier match (titre + bouton "Après-match" + lien vers le calendrier)
 - Affichage du bloc Prochain match (titre "Match à venir")
 - Affichage du bloc Classement
@@ -22,7 +22,7 @@ Tests end-to-end sur la page d'accueil, organisés en suites (`test.describe`) :
 - Affichage du bloc Centenaire (titre + bouton "Découvrir l'histoire" + lien vers l'histoire du club)
 - Affichage du bloc Palmarès (titre + bouton "Voir le palmarès" + lien vers le palmarès)
 - Affichage de l'image du stade
-- Affichage du bloc Tenues officielles (+ liens boutique maillot domicile/extérieur)
+- Affichage du bloc Tenues officielles (+ liens boutique maillot domicile/extérieur/third)
 - Affichage du footer
 
 
@@ -34,10 +34,18 @@ Tests end-to-end sur la page d'accueil, organisés en suites (`test.describe`) :
 - Liens externes vers la bonne destination : Billetterie, Boutique (shop.asmonaco.com),
   Hospitalités (expérience VIP)
 
-> 35 tests exécutés sur Chromium, Firefox et WebKit (105 exécutions).
+> 36 tests exécutés sur Chromium, Firefox et WebKit (108 exécutions).
 
 ## 🛠️ Stack
 Playwright · TypeScript · GitHub Actions (CI)
+
+## 🤖 CI (GitHub Actions)
+Le workflow [`playwright.yml`](.github/workflows/playwright.yml) se déclenche :
+- à chaque `push`/`pull_request` sur `main`/`master`
+- **tous les jours à 4h UTC** (run planifié via `schedule`/cron)
+- manuellement depuis l'onglet **Actions** de GitHub (`workflow_dispatch`)
+
+Le rapport HTML est disponible en artifact téléchargeable sur chaque run.
 
 ## 🏗️ Architecture (Page Object Model)
 

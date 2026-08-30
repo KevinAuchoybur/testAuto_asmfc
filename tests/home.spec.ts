@@ -40,12 +40,12 @@ test('Le bouton Voir toutes les actualités pointe sur les actualités ', async(
 await expect(home.newsLink()).toHaveAttribute('href', /news/);
 });
 
-test('Le bloc Academy est affiché', async() => {
-await expect (home.blocAcademy()).toBeVisible();
+test('Le bloc Ligue Conférence est affiché', async() => {
+await expect (home.blocConferenceLeague()).toBeVisible();
 });
 
-test('Le bouton Dossier spécial pointe sur l\'Academy', async() => {
-await expect (home.academyLink()).toHaveAttribute('href', /academy/);
+test('Le bouton du bloc Ligue Conférence pointe sur les articles', async() => {
+await expect (home.conferenceLeagueLink()).toHaveAttribute('href', /news/);
 });
 
 test('Le bloc Dernier match est bien affiché', async() => {
@@ -103,6 +103,11 @@ await expect (home.homeKit()).toHaveAttribute('href', /home-jersey/);
 test('Le bouton Maillot extérieur pointe sur la boutique avec le maillot extérieur', async() => {
 await expect (home.awayKit()).toHaveAttribute('href', /away-jersey/);
 });
+
+test('Le bouton Maillot third pointe sur la boutique avec le maillot third', async() => {
+await expect (home.thirdKit()).toHaveAttribute('href', /third-kit/);
+});
+
 
 test('Footer bien affiché', async() => {
 await expect (home.footer).toBeVisible();
