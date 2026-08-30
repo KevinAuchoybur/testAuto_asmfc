@@ -9,6 +9,8 @@ on:
   workflow_dispatch:
 jobs:
   test:
+    permissions:
+      contents: write
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -28,3 +30,9 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+    - name: Déployer le rapport sur GitHub Pages
+      if: ${{ !cancelled() && github.ref == 'refs/heads/main' }}
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./playwright-report
