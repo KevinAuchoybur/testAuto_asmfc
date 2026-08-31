@@ -25,7 +25,7 @@ constructor(page : Page){
 }
 
 async goto(){
-  await this.page.goto('/fr/');
+  await this.page.goto('/fr/', { waitUntil: 'domcontentloaded' });
 }
 
 galaxyBarLink(name: string): Locator {
@@ -74,7 +74,7 @@ blocLastMatch(): Locator {
 }
 
 afterMatch(): Locator {
-  return this.page.getByRole('link', {name : 'Après-match'})
+  return this.page.getByRole('link', {name : 'Après-match'}).first();
 }
 
 blocNextMatch(): Locator {

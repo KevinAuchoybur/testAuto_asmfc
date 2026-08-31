@@ -45,7 +45,7 @@ Le workflow [`playwright.yml`](.github/workflows/playwright.yml) se déclenche :
 - **tous les jours à 4h UTC** (run planifié via `schedule`/cron)
 - manuellement depuis l'onglet **Actions** de GitHub (`workflow_dispatch`)
 
-Le rapport HTML est disponible en artifact téléchargeable sur chaque run.
+Le rapport HTML est disponible en artifact téléchargeable sur chaque run, et publié en continu sur GitHub Pages : **https://kevinauchoybur.github.io/testAuto_asmfc/**
 
 ## 🏗️ Architecture (Page Object Model)
 
