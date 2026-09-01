@@ -14,7 +14,7 @@ Tests end-to-end sur la page d'accueil, organisés en suites (`test.describe`) :
 - Affichage du bandeau prochain match
 - Affichage du composant stories
 - Affichage du bloc Actualités (titre + bouton "Voir toutes les actualités" + lien vers les actualités)
-- Affichage du bloc Ligue Conférence (titre + bouton "Voir tous les articles" + lien vers les actualités)
+- Affichage du bloc Ligue 1 McDonald's (titre + bouton "Voir tous les articles" + lien vers les actualités)
 - Affichage du bloc Dernier match (titre + bouton "Après-match" + lien vers le calendrier)
 - Affichage du bloc Prochain match (titre "Match à venir")
 - Affichage du bloc Classement

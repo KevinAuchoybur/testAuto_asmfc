@@ -40,12 +40,12 @@ test('Le bouton Voir toutes les actualités pointe sur les actualités ', async(
 await expect(home.newsLink()).toHaveAttribute('href', /news/);
 });
 
-test('Le bloc Ligue Conférence est affiché', async() => {
-await expect (home.blocConferenceLeague()).toBeVisible();
+test('Le bloc Ligue 1 McDonald\'s est affiché', async() => {
+await expect (home.blocLigue1()).toBeVisible();
 });
 
-test('Le bouton du bloc Ligue Conférence pointe sur les articles', async() => {
-await expect (home.conferenceLeagueLink()).toHaveAttribute('href', /news/);
+test('Le bouton du bloc Ligue 1 McDonald\'s pointe sur les articles', async() => {
+await expect (home.ligue1Link()).toHaveAttribute('href', /news/);
 });
 
 test('Le bloc Dernier match est bien affiché', async() => {

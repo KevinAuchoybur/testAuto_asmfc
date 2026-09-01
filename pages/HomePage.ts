@@ -61,11 +61,11 @@ newsLink(): Locator {
 return this.page.getByRole('link', { name: 'Voir toutes les actualités', exact: true });
 }
 
-blocConferenceLeague(): Locator {
-return this.page.getByRole('heading', {name: 'Ligue Conférence'});
+blocLigue1(): Locator {
+return this.page.getByRole('heading', {name: 'Ligue 1 McDonald\'s'});
 }
 
-conferenceLeagueLink(): Locator {
+ligue1Link(): Locator {
 return this.page.getByRole('link', {name : 'Voir tous les articles'});
 }
 
