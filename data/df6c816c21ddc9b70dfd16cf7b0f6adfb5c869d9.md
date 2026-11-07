@@ -64,31 +64,33 @@ Call log:
     - img "français"
     - text: FR Choisir la langue
 - main:
-  - link "Revis le duel européen entre les Rouge et Blanc et les Danois en images Voir la galerie 📸":
-    - /url: https://www.asmonaco.com/fr/news/revis-le-duel-europeen-entre-les-rouge-et-blanc-et-les-danois-en-images
-    - strong: Revis le duel européen entre les Rouge et Blanc et les Danois en images
-    - text: Voir la galerie 📸
+  - link "Filipe Luis, forteresse, précocité… Les stats à retenir après Nordsjælland Lire l'article 📊":
+    - /url: https://www.asmonaco.com/fr/news/filipe-luis-forteresse-precocite-les-stats-a-retenir-du-succes-de-l-as-monaco-contre-nordsjaelland
+    - strong: Filipe Luis, forteresse, précocité… Les stats à retenir après Nordsjælland
+    - text: Lire l'article 📊
   - button "Mettre en pause le défilement"
   - list:
     - listitem:
+      - 'button "Jérôme : \"Je suis parti à la mi-temps d''un match à Reims car ma fille allait accoucher\""'
+    - listitem:
+      - button "Filipe Luis, forteresse, précocité… Les stats à retenir après Nordsjælland"
+    - listitem:
       - button "Buteur et passeur, Mathys Detourbet élu MVP du succès contre Nordsjælland"
     - listitem:
+      - button "Les highlights du succès de l'AS Monaco face à Nordsjælland en Ligue Conférence"
+    - listitem:
       - button "Revis le duel européen entre les Rouge et Blanc et les Danois en images"
-    - listitem:
-      - 'button "Filipe Luís : \"Un succès très important pour l’équipe et pour la confiance\""'
-    - listitem:
-      - button "Les réactions de Mathys Detourbet et Christian Mawissa après Nordsjælland"
-    - listitem:
-      - button "Appliqué, l'AS Monaco reçu trois sur trois en Ligue Conférence face à Nordsjælland"
-  - text: Diffuseur Canal+
+  - text: Parrain du match Simplicicar match
   - img
+  - text: Diffuseur Ligue 1+
+  - img
+  - img "Le Mans FC"
   - img "AS MONACO"
-  - text: 2 - 0
-  - img "FC Nordsjælland"
-  - text: UEFA Conference League - Journée 3
-  - time: jeu. 05 novembre 2026 - 21:00
-  - link "Après-match":
-    - /url: /fr/pros/calendrier/as-monaco-fc-nordsjaelland
+  - text: Ligue 1 McDonald's - Journée 10
+  - time: dim. 08 novembre 2026 - 17:15
+  - timer: "01 Jours : 05 Heures : 19 Minutes"
+  - link "Avant-match":
+    - /url: /fr/pros/calendrier/le-mans-fc-as-monaco
   - list:
     - listitem:
       - button "Lire la story pour Monaco 2-0 Nordsjælland 🇪🇺":
@@ -205,59 +207,72 @@ Call log:
   - heading "ACTUALITÉS" [level=2]
   - list:
     - listitem:
+      - text: Partout Toujours
+      - 'link "Jérôme : \"Je suis parti à la mi-temps d''un match à Reims parce que ma fille allait accoucher\""':
+        - /url: /fr/news/partout-toujours-jerome-je-suis-parti-a-la-mi-temps-dun-match-a-reims-parce-que-ma-fille-allait-accoucher
+        - strong: "Jérôme : \"Je suis parti à la mi-temps d'un match à Reims parce que ma fille allait accoucher\""
+      - time: 7 novembre 2026
+    - listitem:
+      - text: Les joueurs emblématiques
+      - link "Mark Hateley ou le fighting spirit à l'anglaise":
+        - /url: /fr/news/mark-hateley-ou-le-fighting-spirit-a-langlaise
+        - strong: Mark Hateley ou le fighting spirit à l'anglaise
+      - time: 7 novembre 2026
+    - listitem:
       - text: Sélections
-      - link "Paris Brunner de nouveau appelé avec l’Allemagne U21 pour deux amicaux":
-        - /url: /fr/news/paris-brunner-de-nouveau-appele-avec-l-allemagne-u21-pour-deux-amicaux
-        - strong: Paris Brunner de nouveau appelé avec l’Allemagne U21 pour deux amicaux
+      - link "Christian Mawissa et Mamadou Coulibaly avec la France Espoirs pour deux amicaux":
+        - /url: /fr/news/christian-mawissa-et-mamadou-coulibaly-avec-la-france-espoirs-pour-deux-amicaux
+        - strong: Christian Mawissa et Mamadou Coulibaly avec la France Espoirs pour deux amicaux
       - time: 6 novembre 2026
     - listitem:
-      - text: AS Monaco App
-      - link "Buteur et passeur, Mathys Detourbet élu MVP du succès contre Nordsjælland":
-        - /url: /fr/news/buteur-et-passeur-mathys-detourbet-elu-mvp-du-succes-contre-nordsjaelland
-        - strong: Buteur et passeur, Mathys Detourbet élu MVP du succès contre Nordsjælland
+      - text: Sélections
+      - link "Piazenko, Assab, Ajroud… Le programme des jeunes de l’Academy en sélection":
+        - /url: /fr/news/piazenko-assab-ajroud-le-programme-des-jeunes-de-l-academy-en-selection
+        - strong: Piazenko, Assab, Ajroud… Le programme des jeunes de l’Academy en sélection
       - time: 6 novembre 2026
     - listitem:
-      - text: Photos
-      - link "Revis le duel européen entre les Rouge et Blanc et les Danois en images":
-        - /url: /fr/news/revis-le-duel-europeen-entre-les-rouge-et-blanc-et-les-danois-en-images
-        - strong: Revis le duel européen entre les Rouge et Blanc et les Danois en images
-      - text: Galerie 51 photos
+      - text: Vidéos
+      - link "Les highlights du succès de l'AS Monaco face à Nordsjælland en Ligue Conférence":
+        - /url: /fr/news/les-highlights-du-succes-de-l-as-monaco-face-a-nordsjaelland-en-ligue-conference
+        - strong: Les highlights du succès de l'AS Monaco face à Nordsjælland en Ligue Conférence
+      - text: Vidéo 01:19
       - time: 6 novembre 2026
     - listitem:
-      - text: Réactions
-      - 'link "Filipe Luís : \"Un succès très important pour l’équipe et pour la confiance\""':
-        - /url: /fr/news/reaction-monaco-nordsjaelland-filipe-luis-un-succes-tres-important-pour-l-equipe-et-pour-la-confiance
-        - strong: "Filipe Luís : \"Un succès très important pour l’équipe et pour la confiance\""
+      - text: Academy
+      - link "Quatrième succès de rang pour le Groupe Elite en amical contre Fola Esch":
+        - /url: /fr/news/quatrieme-succes-de-rang-pour-le-groupe-elite-en-amical-contre-fola-esch
+        - strong: Quatrième succès de rang pour le Groupe Elite en amical contre Fola Esch
       - time: 6 novembre 2026
     - listitem:
-      - text: Réactions
-      - link "Les réactions de Mathys Detourbet et Christian Mawissa après Nordsjælland":
-        - /url: /fr/news/les-reactions-de-mathys-detourbet-et-christian-mawissa-apres-nordsjlland
-        - strong: Les réactions de Mathys Detourbet et Christian Mawissa après Nordsjælland
+      - text: Sélections
+      - link "Jules Stawiecki avec la France U20 pour deux amicaux face au Danemark":
+        - /url: /fr/news/jules-stawiecki-avec-la-france-u20-pour-deux-amicaux-face-au-danemark
+        - strong: Jules Stawiecki avec la France U20 pour deux amicaux face au Danemark
       - time: 6 novembre 2026
-    - listitem:
-      - text: Ligue Conférence
-      - link "Appliqué, l'AS Monaco reçu trois sur trois en Ligue Conférence face à Nordsjælland":
-        - /url: /fr/news/compte-rendu-applique-las-monaco-recu-trois-sur-trois-en-ligue-conference-face-a-nordsjlland
-        - strong: Appliqué, l'AS Monaco reçu trois sur trois en Ligue Conférence face à Nordsjælland
-      - time: 5 novembre 2026
     - listitem:
       - text: Statistiques
-      - link "Danemark, transitions, Paris Brunner… Les stats à connaître avant Nordsjælland":
-        - /url: /fr/news/danemark-transitions-paris-brunner-les-stats-a-connaitre-avant-nordsjaelland
-        - strong: Danemark, transitions, Paris Brunner… Les stats à connaître avant Nordsjælland
-      - time: 5 novembre 2026
-    - listitem:
-      - text: Ligue Conférence
-      - link "Le groupe de l’AS Monaco pour la réception de Nordsjælland en Ligue Conférence":
-        - /url: /fr/news/le-groupe-de-l-as-monaco-pour-la-reception-de-nordsjaelland-en-ligue-conference
-        - strong: Le groupe de l’AS Monaco pour la réception de Nordsjælland en Ligue Conférence
-      - time: 5 novembre 2026
+      - link "Filipe Luis, forteresse, précocité… Les stats à retenir après Nordsjælland":
+        - /url: /fr/news/filipe-luis-forteresse-precocite-les-stats-a-retenir-du-succes-de-l-as-monaco-contre-nordsjaelland
+        - strong: Filipe Luis, forteresse, précocité… Les stats à retenir après Nordsjælland
+      - time: 6 novembre 2026
   - link "Voir toutes les actualités":
     - /url: https://www.asmonaco.com/fr/news
   - heading "Ligue Conférence" [level=2]
   - list:
     - listitem:
+      - text: Vidéos
+      - link "Les highlights du succès de l'AS Monaco face à Nordsjælland en Ligue Conférence":
+        - /url: /fr/news/les-highlights-du-succes-de-l-as-monaco-face-a-nordsjaelland-en-ligue-conference
+        - strong: Les highlights du succès de l'AS Monaco face à Nordsjælland en Ligue Conférence
+      - text: Vidéo 01:19
+      - time: 6 novembre 2026
+    - listitem:
+      - text: Statistiques
+      - link "Filipe Luis, forteresse, précocité… Les stats à retenir après Nordsjælland":
+        - /url: /fr/news/filipe-luis-forteresse-precocite-les-stats-a-retenir-du-succes-de-l-as-monaco-contre-nordsjaelland
+        - strong: Filipe Luis, forteresse, précocité… Les stats à retenir après Nordsjælland
+      - time: 6 novembre 2026
+    - listitem:
       - text: AS Monaco App
       - link "Buteur et passeur, Mathys Detourbet élu MVP du succès contre Nordsjælland":
         - /url: /fr/news/buteur-et-passeur-mathys-detourbet-elu-mvp-du-succes-contre-nordsjaelland
@@ -269,18 +284,6 @@ Call log:
         - /url: /fr/news/revis-le-duel-europeen-entre-les-rouge-et-blanc-et-les-danois-en-images
         - strong: Revis le duel européen entre les Rouge et Blanc et les Danois en images
       - text: Galerie 51 photos
-      - time: 6 novembre 2026
-    - listitem:
-      - text: Réactions
-      - 'link "Filipe Luís : \"Un succès très important pour l’équipe et pour la confiance\""':
-        - /url: /fr/news/reaction-monaco-nordsjaelland-filipe-luis-un-succes-tres-important-pour-l-equipe-et-pour-la-confiance
-        - strong: "Filipe Luís : \"Un succès très important pour l’équipe et pour la confiance\""
-      - time: 6 novembre 2026
-    - listitem:
-      - text: Réactions
-      - link "Les réactions de Mathys Detourbet et Christian Mawissa après Nordsjælland":
-        - /url: /fr/news/les-reactions-de-mathys-detourbet-et-christian-mawissa-apres-nordsjlland
-        - strong: Les réactions de Mathys Detourbet et Christian Mawissa après Nordsjælland
       - time: 6 novembre 2026
   - link "Voir tous les articles":
     - /url: https://www.asmonaco.com/fr/news?filters%5Btype%5D=&filters%5Bcategory%5D=&filters%5Bplayer%5D=&filters%5Bshow%5D=276
@@ -299,7 +302,7 @@ Call log:
       - heading "Match à venir" [level=3]
       - time: dim. 08 novembre 2026
       - paragraph: Ligue 1 McDonald's - Journée 10 Stade Marie-Marvingt
-      - timer: "02 J : 04 H : 31 Min"
+      - timer: "01 J : 05 H : 19 Min"
       - text: 17:15 Le Mans FC AS MONACO
       - list:
         - listitem "Ligue 1+":
